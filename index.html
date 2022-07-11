@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/bootstrap-4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link  rel="icon"   href="./assets/favicon/favicon.png" type="image/png" />
+    <title>Generador de imagenes</title>
+</head>
+
+<body style="min-height: 100vh;" class="body-color d-flex align-items-center">
+
+    <section class="container shadow-custom br-custom">
+        <div class="row my-5 p-4">
+            <div class="d-md-flex mx-md-5 justify-content-center align-items-center">
+                <div class="col-12 col-md-6">
+                    <form action="index.html" class="form form-group" id="form">
+                        <h1>Generador de Tasa <br>
+                            BM ENVIOS</h1>
+                        <input class="form-control p-3 mb-3 font-custom" type="number" min="0" max="10" step="0.01"
+                            id="tasa1" placeholder="Bs" onblur="validaNumericos();" />
+                        <input class="form-control p-3 mb-3 font-custom" type="number" min="0" max="10" step="0.001"
+                            id="tasa2" placeholder="COP" onblur="validaNumericos();" />
+                            <input class="form-control p-3 mb-3 font-custom" type="number" min="0" max="10" step="0.001"
+                            id="tasa3" placeholder="MXP" onblur="validaNumericos();" />
+                        <!-- <input class="btn btn-primary p-3 my-3" type="submit" value="Actualizar"> -->
+
+                        <div class="d-flex">
+                            <div class="col-12 col-md-6">
+                                <label for="">Selecciona el color</label>
+                               <div class="col-md-8">
+                                    <div>
+                                        <input type="radio" name="radio1" id="color1" onclick="cambiaColor()">
+                                        <input type="radio" name="radio1" id="color2" onclick="cambiaColor()">
+                                        <input type="radio" name="radio1" id="color3" onclick="cambiaColor()">
+                                        <input type="radio" name="radio1" id="color4" onclick="cambiaColor()">
+                                        <input type="radio" name="radio1" id="color5" onclick="cambiaColor()">
+                                    </div>
+
+                                   <div>
+                                    <input type="radio" name="radio1" id="color6" onclick="cambiaColor()">
+                                    <input type="radio" name="radio1" id="color7" onclick="cambiaColor()">
+                                    <input type="radio" name="radio1" id="color8" onclick="cambiaColor()">
+                                    <input type="radio" name="radio1" id="color9" onclick="cambiaColor()">
+                                    <input type="radio" name="radio1" id="color10" onclick="cambiaColor()">
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="col-12 col-md-6 check-desing">
+                                <label for="">Selecciona el diseño porfavor</label>
+                                <div class="col-md-8">
+                                    <div>
+                                        <input type="radio" name="radio2" id="desing1" onclick="changeDesing()">
+                                        <input type="radio" name="radio2" id="desing2" onclick="changeDesing()">
+                                        <input type="radio" name="radio2" id="desing3" onclick="changeDesing()">
+                                        <input type="radio" name="radio2" id="desing4" onclick="changeDesing()">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#target"><input class="col-12 col-md-7 btn btn-primary p-4" type="button" id="img" value="Generar imagen"
+                            onclick="generar()" style="font-size: 100%;"></a>
+                        <!-- guardar en localStorage
+                        <input class="btn btn-primary p-3 my-3" type="button" id="local" value="guardar tasas" onclick="guardar()"> -->
+                        <!-- resetear valores de inputs -->
+                        <input class="col-6 col-md-2 btn btn-primary p-3 my-3 mx-md-2 img-input-1" type="reset" value=""
+                        placeholder="">
+                        <a id="download">
+                            <input class="col-6 col-md-2 my-3 btn btn-primary p-3 bg-danger img-input-2" type="button" value="D"
+                                placeholder="./assets" onClick="descargar()">
+                        </a>
+                        <!-- <input type="button" id="get" value="visualizar dato guardado" onclick="visualizar()"> -->
+                    </form>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="d-flex justify-content-center ml-md-5 div-canvas">
+                        <canvas id="canvas" class="fondo-canvas"></canvas>
+                        <div id="target"></div>
+                        <div style="display:none;">
+                            <img id="source" src="./assets/img-tasas/version-app.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./lib/bootstrap-4/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
