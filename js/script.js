@@ -136,25 +136,25 @@ document.getElementById("desing1").addEventListener('checked', changeDesing);
 function changeDesing(){
     if(document.getElementById("desing1").checked){
         const img = new Image();
-        img.src = '/../assets/img-tasas/ultimateV.png';
+        img.src = '../assets/img-tasas/ultimateV.png';
         img.onload;
         return img;
     } 
     if(document.getElementById("desing2").checked){
         const img = new Image();
-        img.src = '/../assets/img-tasas/ultimateV.png';
+        img.src = '../assets/img-tasas/ultimateV.png';
         img.onload;
         return img;
     } 
     if(document.getElementById("desing3").checked){
         const img = new Image();
-        img.src = '/../assets/img-tasas/ultimateV.png';
+        img.src = '../assets/img-tasas/ultimateV.png';
         img.onload;
         return img;
     } 
     if(document.getElementById("desing4").checked){
         const img = new Image();
-        img.src = '/../assets/img-tasas/ultimateV.png';
+        img.src = '../assets/img-tasas/ultimateV.png';
         img.onload;
         return img;
     }else{
