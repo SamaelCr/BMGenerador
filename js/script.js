@@ -152,13 +152,53 @@ function changeDesing(){
     } 
     if(document.getElementById("desing3").checked){
         const img = new Image();
-        img.src = '../assets/img-tasas/ultimateV.png';
+        img.src = './assets/img-tasas/ultimateV.png';
         img.onload;
         return img;
     } 
     if(document.getElementById("desing4").checked){
         const img = new Image();
-        img.src = '../assets/img-tasas/ultimateV.png';
+        img.src = './assets/img-tasas/ultimateV.png';
+        img.onload;
+        return img;
+    }
+    if(document.getElementById("desing5").checked){
+        // const img = new Image();
+        // img.src = '../assets/img-tasas/ultimateV.png';
+        // img.onload;
+        const img = document.getElementById('source');
+        img.onload;
+        return img;
+    } 
+    if(document.getElementById("desing6").checked){
+        // const img = new Image();
+        // img.src = '../assets/img-tasas/ultimateV.png';
+        // img.onload;
+        const img = document.getElementById('source');
+        img.onload;
+        return img;
+    } 
+    if(document.getElementById("desing7").checked){
+        const img = new Image();
+        img.src = './assets/img-tasas/ultimateV.png';
+        img.onload;
+        return img;
+    } 
+    if(document.getElementById("desing8").checked){
+        const img = new Image();
+        img.src = './assets/img-tasas/ultimateV.png';
+        img.onload;
+        return img;
+    }
+    if(document.getElementById("desing9").checked){
+        const img = new Image();
+        img.src = './assets/img-tasas/ultimateV.png';
+        img.onload;
+        return img;
+    }
+    if(document.getElementById("desing10").checked){
+        const img = new Image();
+        img.src = './assets/img-tasas/ultimateV.png';
         img.onload;
         return img;
     }else{
