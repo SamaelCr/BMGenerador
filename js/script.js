@@ -146,19 +146,20 @@ function changeDesing(){
         // const img = new Image();
         // img.src = '../assets/img-tasas/ultimateV.png';
         // img.onload;
-        const img = document.getElementById('source');
+        const img = new Image();
+        img.src = './assets/img-tasas/desings/2.png';
         img.onload;
         return img;
     } 
     if(document.getElementById("desing3").checked){
         const img = new Image();
-        img.src = './assets/img-tasas/ultimateV.png';
+        img.src = './assets/img-tasas/desings/3.png';
         img.onload;
         return img;
     } 
     if(document.getElementById("desing4").checked){
         const img = new Image();
-        img.src = './assets/img-tasas/ultimateV.png';
+        img.src = './assets/img-tasas/desings/4.png';
         img.onload;
         return img;
     }
@@ -166,7 +167,8 @@ function changeDesing(){
         // const img = new Image();
         // img.src = '../assets/img-tasas/ultimateV.png';
         // img.onload;
-        const img = document.getElementById('source');
+        const img = new Image();
+        img.src = './assets/img-tasas/desings/5.png';
         img.onload;
         return img;
     } 
@@ -174,31 +176,32 @@ function changeDesing(){
         // const img = new Image();
         // img.src = '../assets/img-tasas/ultimateV.png';
         // img.onload;
-        const img = document.getElementById('source');
+        const img = new Image();
+        img.src = './assets/img-tasas/desings/6.png';
         img.onload;
         return img;
     } 
     if(document.getElementById("desing7").checked){
         const img = new Image();
-        img.src = './assets/img-tasas/ultimateV.png';
+        img.src = './assets/img-tasas/desings/7.png';
         img.onload;
         return img;
     } 
     if(document.getElementById("desing8").checked){
         const img = new Image();
-        img.src = './assets/img-tasas/ultimateV.png';
+        img.src = './assets/img-tasas/desings/8.png';
         img.onload;
         return img;
     }
     if(document.getElementById("desing9").checked){
         const img = new Image();
-        img.src = './assets/img-tasas/ultimateV.png';
+        img.src = './assets/img-tasas/desings/8.png';
         img.onload;
         return img;
     }
     if(document.getElementById("desing10").checked){
         const img = new Image();
-        img.src = './assets/img-tasas/ultimateV.png';
+        img.src = './assets/img-tasas/desings/8.png';
         img.onload;
         return img;
     }else{
@@ -258,10 +261,7 @@ function generar() {
         ctx.strokeStyle = "black";
         ctx.strokeText(text3, 890, 980);
         ctx.fillText(text3, 890, 980);
-
         // ctx.font = "33px Montserrat";
-    }
-   
 
 };
 
@@ -301,19 +301,19 @@ function descargar() {
 //     return false;
 // }
 // no permitir pegar textos
-// function validaNumericos() {
-//     var inputtxt = document.getElementById('text');
-//     console.log(inputtxt);
-//     var valor = inputtxt.value;
-//     for (i = 0; i < valor.length; i++) {
-//         var code = valor.charCodeAt(i);
-//         if (code <= 48 || code >= 57) {
-//             inputtxt.value = "";
-//             return;
-//         }
-//     }
+function validaNumericos() {
+    var inputtxt = document.getElementById('text');
+    console.log(inputtxt);
+    var valor = inputtxt.value;
+    for (i = 0; i < valor.length; i++) {
+        var code = valor.charCodeAt(i);
+        if (code <= 48 || code >= 57) {
+            inputtxt.value = "";
+            return;
+        }
+    }
 
-// }
+}
 
 
 

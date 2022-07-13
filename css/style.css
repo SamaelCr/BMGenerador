@@ -57,6 +57,72 @@
     background-position: center center;
     background-size: cover;
 }
-input[type="redio"]{
-    border: 1px solid red;
+
+/* customizando input radio */
+
+.contenedorinputs {
+    position: relative;
+}
+.Element-radio{
+    position: relative;
+}
+input[type="radio"]{
+    opacity: 0; /* Ocultamos el input verdadero con opacity: 0 */
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+}
+
+.inputfalso{
+    border: 2px solid grey;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    width: 21px;
+    z-index: -1;
+    margin-left: 5px;
+}
+input[type="radio"]:checked + .inputfalso:after {    
+    content: "◉"; /* el valor de la propiedad content también puede ser cualquier imagen, sólo tendríamos que pasarle la ruta de la imagen*/ 
+    text-indent: 2px;
+    position: absolute;
+    top: -1.5px;
+    left: 7px;
+    color: black;
+    width: 70px;
+    height: 70px;
+}
+
+/* personalizando cada uno de los radios en la seleccion de colores */
+.border-color-custom-1{
+    border: 2px solid #ffa62b;
+}
+.border-color-custom-2{
+    border: 2px solid #2caaff;
+}
+.border-color-custom-3{
+    border: 2px solid #51d270;
+}
+.border-color-custom-4{
+    border: 2px solid #ce784f;
+}
+.border-color-custom-5{
+    border: 2px solid #4fc1ce;
+}
+.border-color-custom-6{
+    border: 2px solid #7562c8;
+}
+.border-color-custom-7{
+    border: 2px solid #e5343a;
+}
+.border-color-custom-8{
+    border: 2px solid #ac7d55;
+}
+.border-color-custom-9{
+    border: 2px solid #2569f2;
+}
+.border-color-custom-10{
+    border: 2px solid #b246c4;
 }
