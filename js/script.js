@@ -135,14 +135,18 @@ document.getElementById("desing1").addEventListener('checked', changeDesing);
 // dibuja la imagen en el canvas
 function changeDesing(){
     if(document.getElementById("desing1").checked){
-        const img = new Image();
-        img.src = '../assets/img-tasas/ultimateV.png';
+        // const img = new Image();
+        // img.src = '../assets/img-tasas/ultimateV.png';
+        // img.onload;
+        const img = document.getElementById('source');
         img.onload;
         return img;
     } 
     if(document.getElementById("desing2").checked){
-        const img = new Image();
-        img.src = '../assets/img-tasas/ultimateV.png';
+        // const img = new Image();
+        // img.src = '../assets/img-tasas/ultimateV.png';
+        // img.onload;
+        const img = document.getElementById('source');
         img.onload;
         return img;
     } 
