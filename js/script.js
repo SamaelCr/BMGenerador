@@ -262,7 +262,7 @@ function generar() {
         ctx.strokeText(text3, 890, 980);
         ctx.fillText(text3, 890, 980);
         // ctx.font = "33px Montserrat";
-
+    }
 };
 
 let tamanoTexto = 75;
